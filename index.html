@@ -2,14 +2,18 @@
 <html>
   <head>
     <style>
-      body {
+      .photo-holder {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
       }
       .photo {
         height: 300px;
         background-size: cover;
         background-position: 50% 50%;
+      }
+
+      .photo-holder {
+          display: grid;
       }
       #photo-1 {
         background-image: url('photo-1.jpeg');
@@ -23,21 +27,26 @@
       #photo-4 {
         background-image: url('photo-4.jpeg');
       }
-      #photo-5 {
-        background-image: url('photo-5.jpeg');
+      #photo-7 {
+        background-image: url('photo-7.jpeg');
       }
-      #photo-6 {
-        background-image: url('photo-6.jpeg');
+      #photo-9 {
+        background-image: url('photo-9.jpg');
       }
     </style>
   </head>
   <body>
-    <h1><Friend-O-Gram></h1>
-    <div class="photo" id="photo-1"></div>
-    <div class="photo" id="photo-2"></div>
-    <div class="photo" id="photo-3"></div>
-    <div class="photo" id="photo-4"></div>
-    <div class="photo" id="photo-5"></div>
-    <div class="photo" id="photo-6"></div>
+    
+    <h1>Friend-O-Gram</h1>
+   
+    <div class="photo-holder">
+        <a href="https://www.dog.com/" title="More dogs" class="photo" id="photo-1"></a>
+        <a href="https://www.nd.edu/" title="Visit Notre Dame" class="photo" id="photo-2"></a>
+        <a href="https://kids.nationalgeographic.com/explore/states/georgia/" title="Learn about Georgia" class="photo" id="photo-3"></a>
+        <a href="https://dropinthebucket.org/water-facts/?gclid=Cj0KCQiAlsv_BRDtARIsAHMGVSYmqoUu27mjizaQxVyduhv15P-eRMQp0NlU9SzshCsJ0MEWR_Aox2AaAmibEALw_wcB" title="Facts about water" class="photo" id="photo-4"></a>
+        <a href="https://www.instagram.com/maxmiranda1/?hl=en" title="Max Miranda's instagram" class="photo" id="photo-7"></a>
+        <a href="http://maxmiranda.com/" title="Max Miranda's website" class="photo" id="photo-9"></a>
+    </div>
+
   </body>
 </html>
